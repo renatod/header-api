@@ -9,7 +9,11 @@ app.get('/', (req, res) => {
     brand: {
       logo: 'https://issues.miisy.com/img/logo/me-white.svg',
       link: 'https://me.com.br',
-      newTab: true // links to the same tab if this is ommited
+      iconColor: 'white',
+      background: {
+        primaryColor: 'rgb(10, 140, 204)',
+        secondaryColor: 'rgb(43, 208, 188)'
+      }
     },
     user: {
       name: "Renato Dias",
