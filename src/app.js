@@ -1,5 +1,5 @@
-const express = require('express')
-const cors = require('cors')
+import express from 'express'
+import cors from 'cors'
 
 const app = express()
 app.use(cors())
@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
     navItems: [{
       label: 'Transações',
       icon: 'me-icon icon-market',
-      click: this.doSomething,
+      click: '',
       active: true
     }, {
       label: 'Marketplace',
@@ -65,14 +65,14 @@ app.get('/', (req, res) => {
     }],
     siteMap: [{
       description: 'Painel de Controle',
-      click: this.sayHello,
+      click: 'this.sayHello',
       children: [{
         description: 'Compras',
         url: '#'
       }]
     }, {
       description: 'Marketplace',
-      click: this.sayGoodbye,
+      click: 'this.sayGoodbye',
       children: []
     }, {
       description: 'Usuários',
@@ -153,6 +153,4 @@ app.get('/', (req, res) => {
   })
 });
 
-app.listen(process.env.PORT || 3100, () => {
-  console.log('API running!')
-});
+export default app
