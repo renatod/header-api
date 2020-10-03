@@ -146,7 +146,7 @@ app.get('/', (req, res) => {
         description: 'Pedidos para Enviar',
         url: '#'
       }, {
-        description: 'Mapa Comparativo',
+        description: 'Mapa Comparativos',
         url: '#'
       }]
     }]
